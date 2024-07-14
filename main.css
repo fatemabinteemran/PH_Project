@@ -1,0 +1,130 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.check-all-project button {
+    padding: 20px 50px;
+    background-color: var(--background-color);
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    border-top: 1px solid var(--font-primary-color);
+    border-bottom: 1px solid var(--font-primary-color);
+    border-right: 1px solid var(--font-primary-color);
+
+}
+
+.check-all-project {
+    display: flex;
+    justify-content: center;
+}
+
+.expertise {
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--font-primary-color);
+    
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-container {
+    border-top: 1px solid var(--font-primary-color);
+}
+
+.expertise-img {
+    margin-top: 0px;
+    }
+
+
+
+.blogs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 100%;
+}
+
+.blog img {
+    border-radius: 40px;
+    width: 100%;
+    border: 1px solid var(--font-primary-color);
+}
+
+.blog-title h1 {
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+.tag {
+    background-color: var(--font-primary-color);
+    width: fit-content;
+    padding: 15px 25px;
+    border-radius: 40px;
+    margin: 30px 0px;
+}
+
+.tag h1 {
+    color: black;
+}
+
+.round1 {
+    
+    width: 15px;
+    height: 15px;
+    background-color: rgb(106, 59, 145);
+    border-radius: 100%;
+}
+
+.round2 {
+    
+    width: 15px;
+    height: 15px;
+    background-color: rgb(155, 65, 114);
+    border-radius: 100%;
+}
+
+.name-date {
+    display: flex;
+    gap: 30px;
+}
+
+.date {
+    display: flex;
+    gap: 10px
+}
+
+.name {
+    display: flex;
+    gap: 10px 
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+    .projects {
+        grid-template-columns: repeat(1, 1fr); 
+    } 
+
+    .expertise {
+        flex-direction: column;
+    }
+
+    .blogs {
+        flex-direction: column;
+    }
+    
+
+}
